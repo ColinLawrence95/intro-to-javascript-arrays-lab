@@ -241,14 +241,14 @@ Complete Exercise 15 in the space below:
 */
 let total = 0;
 //iterating through outter array
-numArrays.forEach((arrayInside) =>
+numArrays.forEach((arrayInside) => 
 {
     //itterating through the inner array
-    arrayInside.forEach((elements) =>
-    {
-        //storing sum of elements in total
-        total += elements;
-    });   
+   arrayInside.forEach((elements) =>
+   {
+      //storing sum of elements in total
+      total += elements;
+   });   
 });
 console.log('Exercise 15 result:\n', total);
 
