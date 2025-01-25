@@ -5,8 +5,8 @@ Exercise 1: Define an empty array
 
 Exercise 1 has been completed for you:
 */
-const foods = [];  
-console.log('Exercise 1 result:', foods);
+const foods = [];
+console.log("Exercise 1 result:", foods);
 /*
 
 Exercise 2: Add strings to the array
@@ -18,7 +18,7 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 Complete Exercise 2 in the space below:
 */
 foods.push("pizza", "cheeseburger");
-console.log('Exercise 2 result:', foods);
+console.log("Exercise 2 result:", foods);
 /*
 
 Exercise 3: Insert at the beginning
@@ -28,7 +28,7 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 foods.unshift("taco");
-console.log('Exercise 3 result:', foods);
+console.log("Exercise 3 result:", foods);
 /*
 
 Exercise 4: Access an array element
@@ -41,7 +41,7 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 let favFood = foods[1];
-console.log('Exercise 4 result:', favFood);
+console.log("Exercise 4 result:", favFood);
 /*
 
 Exercise 5: Insert an element between two others
@@ -50,8 +50,8 @@ Exercise 5: Insert an element between two others
 
 Complete Exercise 5 in the space below:
 */
-foods.splice(2,0,"tofu");
-console.log('Exercise 5 result:', foods);
+foods.splice(2, 0, "tofu");
+console.log("Exercise 5 result:", foods);
 /*
 
 Exercise 6: Replace elements
@@ -60,8 +60,8 @@ Exercise 6: Replace elements
 
 Complete Exercise 6 in the space below:
 */
-foods.splice(1,1,"sushi","cupcake");
-console.log('Exercise 6 result:', foods);
+foods.splice(1, 1, "sushi", "cupcake");
+console.log("Exercise 6 result:", foods);
 /*
 
 Exercise 7: Using the `slice()` method
@@ -73,8 +73,8 @@ Exercise 7: Using the `slice()` method
 
 Complete Exercise 7 in the space below:
 */
-const yummy = foods.slice(1,3);
-console.log('Exercise 7 result:', yummy);
+const yummy = foods.slice(1, 3);
+console.log("Exercise 7 result:", yummy);
 /*
 
 Exercise 8: Finding an index
@@ -88,7 +88,7 @@ Complete Exercise 8 in the space below:
 */
 //gettting index value of tofu
 let soyIdx = foods.indexOf("tofu");
-console.log('Exercise 8 result:', soyIdx);
+console.log("Exercise 8 result:", soyIdx);
 /*
 
 Exercise 9: Joining elements
@@ -105,7 +105,7 @@ Complete Exercise 9 in the space below:
 */
 //concatenating strings with join and adding ->
 let allFoods = foods.join(" -> ");
-console.log('Exercise 9 result:', allFoods);
+console.log("Exercise 9 result:", allFoods);
 
 /*
 
@@ -120,7 +120,7 @@ Complete Exercise 10 in the space below:
 */
 //checking if array includes soup
 let hasSoup = foods.includes("soup");
-console.log('Exercise 10 result:', hasSoup);
+console.log("Exercise 10 result:", hasSoup);
 /*
 
 Exercise 11: Odd numbers from an array
@@ -136,16 +136,14 @@ Complete Exercise 11 in the space below:
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 const odds = [];
 //for loop iterating through the length of the array.
-for (i = 0; i < nums.length; i++)
-{
-    //checking if number is odd via there being a remainder when divided by 2.
-    if ((nums[i] % 2) != 0)
-    {
-        //pushing those values to odds array
-        odds.push(nums[i]);
-    }
+for (i = 0; i < nums.length; i++) {
+  //checking if number is odd via there being a remainder when divided by 2.
+  if (nums[i] % 2 != 0) {
+    //pushing those values to odds array
+    odds.push(nums[i]);
+  }
 }
-console.log('Exercise 11 result:', odds);
+console.log("Exercise 11 result:", odds);
 /*
 
 Exercise 12: FizzBuzz with arrays
@@ -169,28 +167,24 @@ const fizz = [];
 const buzz = [];
 const fizzbuzz = [];
 //for loop iterating through the length of tthe array
-for (i = 0; i < nums.length; i++)
-{
-    //pushing to fizz if evenly divisable by 3
-    if ((nums[i] % 3 == 0))
-    {
-        fizz.push(nums[i]);
-    }
-    //pushing to buzz if evenly divisable by 5
-    if ((nums[i] % 5 == 0))
-    {
-        buzz.push(nums[i]);
-    }
-    //pushing to fizzbuzz if evenly divisable by both
-    if ((nums[i] % 5 == 0) && (nums[i] % 3 == 0))
-    {
-        fizzbuzz.push(nums[i]);
-    }
-}   
-console.log('Exercise 12 Results:');
-console.log('  fizz:', fizz);
-console.log('  buzz:', buzz);
-console.log('  fizzbuzz:', fizzbuzz);
+for (i = 0; i < nums.length; i++) {
+  //pushing to fizz if evenly divisable by 3
+  if (nums[i] % 3 == 0) {
+    fizz.push(nums[i]);
+  }
+  //pushing to buzz if evenly divisable by 5
+  if (nums[i] % 5 == 0) {
+    buzz.push(nums[i]);
+  }
+  //pushing to fizzbuzz if evenly divisable by both
+  if (nums[i] % 5 == 0 && nums[i] % 3 == 0) {
+    fizzbuzz.push(nums[i]);
+  }
+}
+console.log("Exercise 12 Results:");
+console.log("  fizz:", fizz);
+console.log("  buzz:", buzz);
+console.log("  fizzbuzz:", fizzbuzz);
 /*
 
 Exercise 13: Retrieve the Last Array
@@ -203,16 +197,15 @@ Exercise 13: Retrieve the Last Array
 
 Complete Exercise 13 in the space below:
 */
-const numArrays = 
-[
-	[100, 5, 23],
-	[15, 21, 72, 9],
-	[45, 66],
-	[7, 81, 90]
+const numArrays = [
+  [100, 5, 23],
+  [15, 21, 72, 9],
+  [45, 66],
+  [7, 81, 90],
 ];
 //selecting last array
 let numList = numArrays[3];
-console.log('Exercise 13 result:', numList);
+console.log("Exercise 13 result:", numList);
 /*
 
 Exercise 14: Accessing within nested arrays
@@ -224,8 +217,8 @@ Exercise 14: Accessing within nested arrays
 
 Complete Exercise 14 in the space below:
 */
-let num = numArrays[2][1]
-console.log('Exercise 14 result:', num);
+let num = numArrays[2][1];
+console.log("Exercise 14 result:", num);
 /*
 
 Exercise 15: Nested array sum
@@ -241,15 +234,11 @@ Complete Exercise 15 in the space below:
 */
 let total = 0;
 //iterating through outter array
-numArrays.forEach((arrayInside) => 
-{
-    //itterating through the inner array
-   arrayInside.forEach((elements) =>
-   {
-      //storing sum of elements in total
-      total += elements;
-   });   
+numArrays.forEach((arrayInside) => {
+  //itterating through the inner array
+  arrayInside.forEach((elements) => {
+    //storing sum of elements in total
+    total += elements;
+  });
 });
-console.log('Exercise 15 result:\n', total);
-
-
+console.log("Exercise 15 result:\n", total);
